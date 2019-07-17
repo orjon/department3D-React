@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MenuBar from './Components/MenuBar';
+import Carousel from './Components/Carousel';
+import Service from './Components/Service';
+import './scss/App.scss';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuBar />
+      <div id="main">
+        <Carousel />
+        <Service className='Architectural' name='Architectural' />
+        <Service className='ThreeD' name='3D Models'/>
+        <Service className='Product' name='Product'/>
+        <Service className='Technical' name='Technical'/>
+      </div>
     </div>
   );
 }

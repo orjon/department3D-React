@@ -1,0 +1,10 @@
+@import "common";
+
+.MenuBar {
+  // background-color: grey;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  border: $devBorder solid red;
+}
