@@ -1,0 +1,23 @@
+@import 'common';
+
+#Carousel {
+  height: 100%;
+  scroll-snap-align: center;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  .links {
+    border: $devBorder solid yellow;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
+      border: $devBorder solid green;
+    }
+
+  }
+}

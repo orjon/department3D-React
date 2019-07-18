@@ -1,19 +1,45 @@
-* {
+@import "common";
+
+.serviceSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   height: 100%;
+  scroll-snap-align: center;
+  position: relative;
 }
 
-.Architectural {
+#Architectural {
   background-color: pink;
 }
 
-.ThreeD {
+#Models {
   background-color: lightblue;
 }
 
-.Product {
+#Product {
   background-color: lightgreen;
 }
 
-.Technical {
+#Technical {
   background-color: lightyellow;
+}
+
+.navArrowUp, .navArrowDown {
+  border: $devBorder solid cyan;
+  width: 40px;
+}
+.navArrowUp {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navArrowDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(180deg);
 }

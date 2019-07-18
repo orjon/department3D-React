@@ -5,7 +5,7 @@ class MenuBar extends Component {
   render() {
     return (
       <div className='MenuBar'>
-      MenuBar
+
       </div>
 
     )

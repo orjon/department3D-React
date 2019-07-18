@@ -11,11 +11,28 @@ function App() {
       <MenuBar />
       <div id="main">
         <Carousel />
-        <Service className='Architectural' name='Architectural' />
-        <Service className='ThreeD' name='3D Models'/>
-        <Service className='Product' name='Product'/>
-        <Service className='Technical' name='Technical'/>
+        <Service
+          id='Architectural'
+          name='Architectural'
+          up='#Carousel'
+          down='#Models'/>
+        <Service
+          id='Models'
+          name='3D Models'
+          up='#Architectural'
+          down='#Product'/>
+        <Service
+          id='Product'
+          name='Product'
+          up='#Models'
+          down='#Technical'/>
+        <Service
+          id='Technical'
+          name='Technical'
+          up='#Product'/>
       </div>
+
+
     </div>
   );
 }
