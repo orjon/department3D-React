@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+
 import '../scss/Service.scss'
 
 class Service extends Component {
   render() {
     return(
       <div id={this.props.id} className='serviceSection'>
+      <div id='slideShowImage'>
+
+      </div>
         <h1>{this.props.name}</h1>
         <div className='navArrows'>
           <a href={this.props.up}>

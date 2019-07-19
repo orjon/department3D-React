@@ -8,7 +8,6 @@ import './scss/App.scss';
 function App() {
   return (
     <div className="App">
-      <MenuBar />
       <div id="main">
         <Carousel />
         <Service
@@ -31,8 +30,7 @@ function App() {
           name='Technical'
           up='#Product'/>
       </div>
-
-
+      <MenuBar />
     </div>
   );
 }
