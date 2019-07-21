@@ -4,9 +4,8 @@ import '../scss/ImageFader.scss'
 
 const fadeImages = [
   'http://www.orjon.com/images/design/cisco2015.jpg',
-  'http://www.orjon.com/images/design/nouTable.jpg',
   'http://www.orjon.com/images/design/foreshore.jpg',
-  'http://www.orjon.com/images/design/statoil.jpg'
+  'http://www.orjon.com/images/design/samsung.jpg',
 ];
 
 const fadeProperties = {
@@ -36,3 +35,10 @@ const ImageFader = () => {
 }
 
 export default ImageFader;
+//
+// const fadeImages = [
+//   'http://www.orjon.com/images/design/cisco2015.jpg',
+//   'http://www.orjon.com/images/design/nouTable.jpg',
+//   'http://www.orjon.com/images/design/foreshore.jpg',
+//   'http://www.orjon.com/images/design/statoil.jpg'
+// ];

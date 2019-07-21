@@ -1,0 +1,15 @@
+@import "common";
+@import "flexLayouts";
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  // z-index: 10;
+  border: $devBorder solid red;
+  width: 100%;
+  height: $footerHeight;
+  padding-right: $navPadding;
+  @include flexRowEnd();
+	background-color: $backgroundColor;
+}

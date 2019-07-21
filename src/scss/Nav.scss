@@ -1,0 +1,52 @@
+@import "common";
+@import "flexLayouts";
+
+
+nav {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  border: $devBorder solid red;
+  width: 100%;
+  height: $navHeight;
+  padding: $navPadding;
+  @include flexRowStart();
+	background-color: $backgroundColor;
+
+  .logo {
+    height: 100%;
+    border: $devBorder solid blue;
+  }
+
+  .menus {
+    width: 100%;
+    height: 100%;
+    border: $devBorder solid blue;
+    // .dotMenu {
+    //   height: 100%;
+    //   align-items: right;
+    // }
+    // .dotMenu {
+    //   border: $devBorder solid cyan;
+    //   height: 100%;
+    //   // display: block;
+    //   // @media (min-width: 600px) {
+    //   //   display: none;
+    //   // }
+    // }
+
+    .navIcons {
+      height: 100%;
+      @include flexRowStart();
+
+      img.navIcon {
+        height: 100%;
+        margin-right: $navPadding;
+
+      }
+      #about:hover {
+
+      }
+    }
+  }
+}

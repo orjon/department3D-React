@@ -1,5 +1,6 @@
 import React from 'react';
-import MenuBar from './Components/MenuBar';
+import Nav from './Components/Nav';
+import Footer from './Components/Footer';
 import Carousel from './Components/Carousel';
 import Service from './Components/Service';
 import './scss/App.scss';
@@ -8,7 +9,9 @@ import './scss/App.scss';
 function App() {
   return (
     <div className="App">
+      <Nav />
       <div id="main">
+
         <Carousel />
         <Service
           id='Architectural'
@@ -30,9 +33,10 @@ function App() {
           name='Technical'
           up='#Product'/>
       </div>
-      <MenuBar />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+      // <Nav />

@@ -1,0 +1,11 @@
+@import "common";
+
+.MenuBar {
+  // background-color: grey;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: $navHeight;
+  border: $devBorder solid red;
+  z-index: 10;
+}

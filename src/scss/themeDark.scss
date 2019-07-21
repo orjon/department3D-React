@@ -1,0 +1,19 @@
+$backgroundColor: #2e3032;
+
+$icon: rgba(255,255,255,0.9);
+$iconHover: rgba(255,255,255,1);
+
+.logo{
+  filter: invert(80%);
+  &:hover{
+    filter: invert(100%);
+  }
+}
+
+
+.navIcon{
+  filter: invert(80%);
+  &:hover{
+    filter: invert(100%);
+  }
+}

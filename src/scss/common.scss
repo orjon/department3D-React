@@ -1,4 +1,13 @@
-$devBorder: 1px;
+// @import "themeDark";
+@import "themeLight";
+
+
+$devBorder: 0px;
+
+$navHeight: 50px;
+$footerHeight: 25px;
+$navPadding: 10px;
+
 
 * {
   box-sizing: border-box;
@@ -7,7 +16,7 @@ $devBorder: 1px;
   user-select: none;
   overflow-x: none;
   scroll-behavior: smooth;
-  font-family:'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Maven Pro', 'Helvetica', sans-serif;
   font-weight:300;
 }
 

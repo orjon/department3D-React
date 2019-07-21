@@ -15,7 +15,6 @@
 #slideShowImage {
   width: 100%;
   height: 100%;
-  background-image: url('http://www.orjon.com/images/design/nouTable.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -23,6 +22,9 @@
 
 #Architectural {
   background-color: pink;
+  #slideShowImage {
+    background-image: url('http://www.orjon.com/images/design/nouTable.jpg');
+  }
 }
 
 #Models {

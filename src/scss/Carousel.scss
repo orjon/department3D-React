@@ -1,10 +1,11 @@
 @import 'common';
 
 #Carousel {
-  height: 100%;
+  // height: 100%;
+  height: calc(100% - $navHeight);
   width: 100%;
   scroll-snap-align: center;
-  border: $devBorder solid lime;
+  border: $devBorder solid orange;
 }
 
 

@@ -1,15 +1,16 @@
+@import 'common';
+
 .App {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  background-color: lightgrey;
+  background-color: $backgroundColor;
   width: 100vw;
   height: 100vh;
 }
 
 #main {
-  background-color: blanchedalmond;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;

@@ -22,21 +22,14 @@ h3 {
   text-align: center;
 }
 
-.each-fade {
-  width:100vw;
-  height:100vh;
-  display: flex;
-}
-
-.each-fade .image-container {
-  width:100%;
-  height:100%;
-}
-
 .each-fade .image-container img {
-  width:100%;
-  height:100%;
+  width:100vw;
+  margin-top: $navHeight;
+  padding-bottom: $footerHeight;
+  height: calc(100vh - #{$navHeight});
   object-fit: cover;
+  opacity: 1;
+  border: $devBorder solid cyan;
 }
 
 .each-fade h2 {

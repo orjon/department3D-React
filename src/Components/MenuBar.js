@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import '../scss/MenuBar.scss'
+import '../scss/Nav.scss'
 
 class MenuBar extends Component {
   render() {
     return (
-      <div className='MenuBar'>
-
-      </div>
+      <nav className='MenuBar'>
+      Menu Menu Menu
+      </nav>
 
     )
   }
