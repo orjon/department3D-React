@@ -12,7 +12,7 @@ class Nav extends Component {
         <a href='#Carousel'>
           <img
             className='logo'
-            src={require('../images/nav/department3D.png')}
+            src={require('../images/nav/department3D(white).png')}
             alt='department3D logo'
           />
         </a>
@@ -20,29 +20,29 @@ class Nav extends Component {
           <NavIcon
             iconId='iconVisualisation'
             link='#Visualisation'
-            iconImage='http://www.orjon.com/dept3d/images/icons/visualisationA.png'
-            iconHover='http://www.orjon.com/dept3d/images/icons/visualisationB.png'
+            iconImage='http://www.orjon.com/dept3d/images/icons/visualisationWhtA.png'
+            iconHover='http://www.orjon.com/dept3d/images/icons/visualisationWhtB.png'
             altText='visualisation icon'
           />
           <NavIcon
             iconId='iconDesign'
             link='#Design'
-            iconImage='http://www.orjon.com/dept3d/images/icons/Design6A.png'
-            iconHover='http://www.orjon.com/dept3d/images/icons/Design6B.png'
+            iconImage='http://www.orjon.com/dept3d/images/icons/designWhtA.png'
+            iconHover='http://www.orjon.com/dept3d/images/icons/designWhtB.png'
             altText='design icon'
           />
           <NavIcon
             iconId='iconPrinting'
             link='#Printing'
-            iconImage='http://www.orjon.com/dept3d/images/icons/Printing3A.png'
-            iconHover='http://www.orjon.com/dept3d/images/icons/Printing3B.png'
+            iconImage='http://www.orjon.com/dept3d/images/icons/printingWhtA.png'
+            iconHover='http://www.orjon.com/dept3d/images/icons/printingWhtB.png'
             altText='3D Printing icon'
           />
           <NavIcon
             iconId='iconModels'
             link='#Models'
-            iconImage='http://www.orjon.com/dept3d/images/icons/3dModelsA3.png'
-            iconHover='http://www.orjon.com/dept3d/images/icons/3dModelsB(cyan).png'
+            iconImage='http://www.orjon.com/dept3d/images/icons/modelsWhtA.png'
+            iconHover='http://www.orjon.com/dept3d/images/icons/modelsWhtB.png'
             altText='3D models icon'
           />
 

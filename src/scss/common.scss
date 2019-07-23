@@ -1,6 +1,5 @@
-// @import "themeDark";
-@import "themeLight";
-
+@import "themeDark";
+// @import "themeLight";
 
 $devBorder: 0px;
 
@@ -10,8 +9,10 @@ $navPadding: 10px;
 $iconPadding: 15px;
 
 $descriptionPadding: 20px;
-$descriptionPaddingTop: 10%;
+$descriptionPaddingTop: 12.5%;
 $descriptionWidth: 33%;
+
+$serviceDivider: rgba(255,255,255,0.8);
 
 * {
   box-sizing: border-box;

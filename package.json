@@ -1,5 +1,6 @@
 {
   "name": "2019-07-16_department3d",
+  "homepage" : "http://www.orjon.com/dept3d",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

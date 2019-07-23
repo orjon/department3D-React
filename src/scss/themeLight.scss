@@ -9,7 +9,7 @@ $iconDim: 25%;
 }
 
 .logo{
-  filter: invert($iconDim);
+  opacity: invert($iconDim);
   &:hover{
     filter: invert(0%);
   }

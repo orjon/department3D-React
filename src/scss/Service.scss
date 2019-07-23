@@ -1,7 +1,7 @@
 @import "common";
 @import "flexLayouts";
 
-.serviceSection {
+.layoutLeft {
   height: 100%;
   display: flex;
   align-items: center;
@@ -10,6 +10,25 @@
   align-content: center;
   scroll-snap-align: center;
   position: relative;
+  .serviceImage{
+    margin-right: $navHeight;
+  }
+  border-top: 1px solid $serviceDivider;
+}
+
+.layoutRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  scroll-snap-align: center;
+  position: relative;
+  .serviceImage{
+    margin-left: $navHeight;
+  }
+  border-top: 1px solid $serviceDivider;
 }
 
 .serviceDescription {
@@ -26,6 +45,7 @@
     font-size: 1.75em;
   }
   p {
+    padding-top: $navPadding;
     font-size: 1.25em;
     justify-content: flex-start;
     align-content: flex-start;
@@ -36,9 +56,8 @@
 .serviceImage {
   width: 70%;
   margin-top: $navHeight;
-  padding-bottom: $footerHeight;
-  margin-right: $navHeight;
-  height: calc(100vh - #{$navHeight});
+  margin-bottom: $footerHeight;
+  height: calc(100vh - #{$navHeight} - #{$footerHeight});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;

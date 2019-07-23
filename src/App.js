@@ -15,18 +15,22 @@ function App() {
         <Carousel />
         <Service
           id='Visualisation'
+          layout='layoutLeft'
           name='Visualisation'
           description='3D rendering services for architects & designers'/>
         <Service
           id='Design'
+          layout='layoutRight'
           name='Design'
           description='Conceptual and technical design'/>
         <Service
           id='Printing'
+          layout='layoutLeft'
           name='3D Printing'
           description='FDM rapid protoyping'/>
         <Service
           id='Models'
+          layout='layoutRight'
           name='3D Models'
           description='3D files of popular event venues'/>
       </div>

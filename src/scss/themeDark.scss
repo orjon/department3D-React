@@ -3,6 +3,7 @@ $backgroundColor: #2e3032;
 
 $textDim: 0.8;
 $imageDim: 80%;
+$iconOpacity: 0.9;
 
 $icon: rgba(255,255,255,0.9);
 $iconHover: rgba(255,255,255,1);
@@ -12,16 +13,17 @@ $iconHover: rgba(255,255,255,1);
 }
 
 .logo{
-  filter: invert($imageDim);
+  opacity: 1;
   &:hover{
-    filter: invert(100%);
+    opacity: 1;
   }
 }
 
 
 .navIcon{
-  filter: invert($imageDim);
+    opacity: $iconOpacity;
+    // opacity: 1;
   &:hover{
-    filter: invert(100%);
+    opacity: 1;
   }
 }

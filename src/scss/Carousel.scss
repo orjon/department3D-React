@@ -2,7 +2,7 @@
 
 #Carousel {
   // height: 100%;
-  height: calc(100% - $navHeight);
+  height: calc(100vh - #{$navHeight});
   width: 100%;
   scroll-snap-align: center;
   border: $devBorder solid orange;
