@@ -8,30 +8,27 @@ import './scss/App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Nav />
-      <div id="main">
+      <div id='main'>
 
         <Carousel />
         <Service
-          id='Architectural'
-          name='Architectural'
-          up='#Carousel'
-          down='#Models'/>
+          id='Visualisation'
+          name='Visualisation'
+          description='3D rendering services for architects & designers'/>
+        <Service
+          id='Design'
+          name='Design'
+          description='Conceptual and technical design'/>
+        <Service
+          id='Printing'
+          name='3D Printing'
+          description='FDM rapid protoyping'/>
         <Service
           id='Models'
           name='3D Models'
-          up='#Architectural'
-          down='#Product'/>
-        <Service
-          id='Product'
-          name='Product'
-          up='#Models'
-          down='#Technical'/>
-        <Service
-          id='Technical'
-          name='Technical'
-          up='#Product'/>
+          description='3D files of popular event venues'/>
       </div>
       <Footer />
     </div>
