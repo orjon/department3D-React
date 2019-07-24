@@ -1,7 +1,8 @@
-![Alt text](/src/images/logo/department3D.png?raw=true "department3D logo")
+![Alt text](src/images/logo/department3D.png?raw=true "department3D logo")
 
 department3D React.js website & store - work in progress.
 
+<<<<<<< HEAD
 ## Screen grabs - Light theme
 
 #### Splash Screen
@@ -27,6 +28,11 @@ department3D React.js website & store - work in progress.
 ![Alt text](/Source/screenshots/DarkPrinting01.jpg?raw=true "Light theme splash screen")
 #### 3D Models Screen
 ![Alt text](/Source/screenshots/DarkModels01.jpg?raw=true "Light theme splash screen")
+=======
+### Screen grabs - White theme
+
+![Alt text](Source/screenshots/Screenshot Splash01.jpg?raw=true "White theme splash screen")
+>>>>>>> 16a99dea9ac520c2a0b74fdeadeef6ca43417a87
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
