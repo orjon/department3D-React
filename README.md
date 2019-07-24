@@ -1,10 +1,10 @@
-![Alt text](/src/images/logo/department3D.png?raw=true "department3D logo")
+![Alt text](src/images/logo/department3D.png?raw=true "department3D logo")
 
 department3D React.js website & store - work in progress.
 
 ### Screen grabs - White theme
 
-![Alt text](/Source/screenshots/Screenshot Splash01.jpg?raw=true "White theme splash screen")
+![Alt text](Source/screenshots/Screenshot Splash01.jpg?raw=true "White theme splash screen")
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
