@@ -2,30 +2,37 @@
 
 department3D React.js website & store - work in progress.
 
-<<<<<<< HEAD
-## Screen grabs - Light theme
+# Screen grabs - Light theme
 
 #### Splash Screen
 ![Alt text](/Source/screenshots/Splash01.jpg?raw=true "Light theme splash screen")
+
 #### Visualisation Screen
 ![Alt text](/Source/screenshots/Visualisation01.jpg?raw=true "Light theme splash screen")
+
 #### Design Screen
 ![Alt text](/Source/screenshots/Design01.jpg?raw=true "Light theme splash screen")
+
 #### 3D Printing Screen
 ![Alt text](/Source/screenshots/Printing01.jpg?raw=true "Light theme splash screen")
+
 #### 3D Models Screen
 ![Alt text](/Source/screenshots/Models01.jpg?raw=true "Light theme splash screen")
 
-## Screen grabs - Dark theme
+# Screen grabs - Dark theme
 
 #### Splash Screen
 ![Alt text](/Source/screenshots/DarkSplash01.jpg?raw=true "Light theme splash screen")
+
 #### Visualisation Screen
 ![Alt text](/Source/screenshots/DarkVisualisation01.jpg?raw=true "Light theme splash screen")
+
 #### Design Screen
 ![Alt text](/Source/screenshots/DarkDesign01.jpg?raw=true "Light theme splash screen")
+
 #### 3D Printing Screen
 ![Alt text](/Source/screenshots/DarkPrinting01.jpg?raw=true "Light theme splash screen")
+
 #### 3D Models Screen
 ![Alt text](/Source/screenshots/DarkModels01.jpg?raw=true "Light theme splash screen")
 =======
