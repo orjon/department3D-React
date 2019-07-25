@@ -9,18 +9,19 @@ class NavIcon extends Component {
     }
     this.mouseHover = this.mouseHover.bind(this);
     this.mouseOut = this.mouseOut.bind(this);
+    this.mouseDown = this.mouseDown.bind(this);
   }
 
   mouseHover() {
-      this.setState({
-          iconHovered: true
-      });
+    this.setState({iconHovered: true});
+  }
+
+  mouseDown() {
+    this.props.setActiveSection(this.props.section)
   }
 
   mouseOut() {
-      this.setState({
-          iconHovered: false
-      });
+    this.setState({iconHovered: false});
   }
 
   render() {
@@ -28,19 +29,20 @@ class NavIcon extends Component {
       <div
         className='navIcon'
         onMouseEnter={this.mouseHover}
-        onMouseLeave={this.mouseOut}>
-        { this.state.iconHovered
-          ? <a href={this.props.link}>
+        onMouseLeave={this.mouseOut}
+        onClick={this.mouseDown}>
+        { this.state.iconHovered ||
+          (this.props.activeSection === this.props.section)
+          ? <a href={`#${this.props.section}`}>
               <img
-              href={this.props.link}
-              id={this.props.iconId}
+              id={`nav${this.props.section}`}
               alt={this.props.altText}
               src={this.props.iconHover}
               />
             </a>
           : <a href={this.props.link}>
               <img
-              id={this.props.iconId}
+
               alt={this.props.altText}
               src={this.props.iconImage}
               />

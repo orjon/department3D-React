@@ -8,18 +8,3 @@ $iconDim: 25%;
 * {
   color: rgba(0,0,0,80);
 }
-
-.logo{
-  opacity: invert($iconDim);
-  &:hover{
-    filter: invert(0%);
-  }
-}
-
-
-.navIcon{
-  filter: invert($iconDim);
-  &:hover{
-    filter: invert(0%);
-  }
-}

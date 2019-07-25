@@ -7,10 +7,25 @@ import './scss/App.scss';
 
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      activeSection: 'Carousel'
+    }
+    this.setActiveSection = this.setActiveSection.bind(this);
+  }
+
+  setActiveSection(activeSection) {
+    const clickedSection = activeSection;
+    this.setState({activeSection: clickedSection});
+  }
+
   render() {
     return (
       <div className='App'>
-        <Nav />
+        <Nav
+          activeSection={this.state.activeSection}
+          setActiveSection={this.setActiveSection}/>
         <div id='main'>
 
           <Carousel />

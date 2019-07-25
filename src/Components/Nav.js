@@ -4,6 +4,14 @@ import NavIcon from './NavIcon';
 import '../scss/Nav.scss';
 
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.mouseDown = this.mouseDown.bind(this);
+  }
+
+  mouseDown() {
+    this.props.setActiveSection('Carousel')
+  }
 
   render() {
     return (
@@ -11,6 +19,7 @@ class Nav extends Component {
         {/* <Link to='/'></Link> */}
         <a href='#Carousel'>
           <img
+            onClick={this.mouseDown}
             className='logo'
             src='http://www.orjon.com/department3d/images/logo/department3D.png'
             alt='department3D logo'
@@ -18,38 +27,39 @@ class Nav extends Component {
         </a>
         <div className='navIcons'>
           <NavIcon
-            iconId='iconVisualisation'
-            link='#Visualisation'
+            section='Visualisation'
+            activeSection={this.props.activeSection}
+            setActiveSection={this.props.setActiveSection}
             iconImage='http://www.orjon.com/department3d/images/icons/visualisationA.png'
             iconHover='http://www.orjon.com/department3d/images/icons/visualisationB.png'
             altText='visualisation icon'
           />
           <NavIcon
-            iconId='iconDesign'
-            link='#Design'
+            section='Design'
+            activeSection={this.props.activeSection}
+            setActiveSection={this.props.setActiveSection}
             iconImage='http://www.orjon.com/department3d/images/icons/designA.png'
             iconHover='http://www.orjon.com/department3d/images/icons/designB.png'
             altText='design icon'
           />
           <NavIcon
-            iconId='iconPrinting'
-            link='#Printing'
+            section='Printing'
+            activeSection={this.props.activeSection}
+            setActiveSection={this.props.setActiveSection}
             iconImage='http://www.orjon.com/department3d/images/icons/printingA.png'
             iconHover='http://www.orjon.com/department3d/images/icons/printingB.png'
             altText='3D Printing icon'
           />
           <NavIcon
-            iconId='iconModels'
-            link='#Models'
+            section='Models'
+            activeSection={this.props.activeSection}
+            setActiveSection={this.props.setActiveSection}
             iconImage='http://www.orjon.com/department3d/images/icons/modelsA.png'
             iconHover='http://www.orjon.com/department3d/images/icons/modelsB2.png'
             altText='3D models icon'
           />
 
         </div>
-
-
-
       </nav>
     );
   }
@@ -57,42 +67,3 @@ class Nav extends Component {
 };
 
 export default Nav;
-//
-// this.onMouseEnterHandler = this.onMouseEnterHandler.bind(this);
-//        this.onMouseLeaveHandler = this.onMouseLeaveHandler.bind(this);
-//    }
-//
-//    onMouseEnterHandler() {
-//        this.setState({
-//            isHover: true
-//        });
-//    }
-//
-//    onMouseLeaveHandler() {
-//        this.setState({
-//            isHover: false
-//        });
-//    }
-//
-//    render() {
-//        return (
-//            <div className='app'>
-//                <div className='icon' onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler}>
-//                    {
-//                        this.state.isHover
-//                            ? <div>hovered</div>
-//                            : <div>some text</div>
-//                    }
-//                </div>
-//            </div>
-//        );
-//    }
-// }
-
-
-// <img
-//   className='navIcon'
-//   id='models'
-//   src={require('../images/nav/3dModelsA1.png')}
-//   alt='navigate to 3D model section icon'
-// />
