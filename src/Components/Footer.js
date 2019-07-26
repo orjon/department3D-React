@@ -5,7 +5,9 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-      &copy; department3D 2019
+
+      <div id='imageCredit'></div>
+      <div id='copyright'>&copy; department3D 2019</div>
       </footer>
     )
   }

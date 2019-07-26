@@ -1,26 +1,26 @@
 @import 'common';
 
-.slide-container {
-  width: 70%;
-  margin: auto; }
-
-h3 {
-  text-align: center; }
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 300px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
+// .slide-container {
+//   width: 70%;
+//   margin: auto; }
+//
+// h3 {
+//   text-align: center; }
+//
+// .each-slide > div {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-size: cover;
+//   height: 300px;
+// }
+//
+// .each-slide span {
+//   padding: 20px;
+//   font-size: 20px;
+//   background: #efefef;
+//   text-align: center;
+// }
 
 .each-fade .image-container img {
   width:100vw;
@@ -32,11 +32,9 @@ h3 {
   border: $devBorder solid cyan;
 }
 
-.each-fade h2 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.each-fade .imageLabel {
+  position: relative;
+  bottom: $footerHeight;
   margin: 0;
-  background: #adceed;
+  background: white;
 }

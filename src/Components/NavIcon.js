@@ -12,6 +12,7 @@ class NavIcon extends Component {
     this.mouseDown = this.mouseDown.bind(this);
   }
 
+
   mouseHover() {
     this.setState({iconHovered: true});
   }

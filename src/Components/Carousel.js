@@ -6,7 +6,7 @@ class Carousel extends Component {
   render() {
     return(
       <div id='Carousel'>
-        <ImageFader />
+        <ImageFader setActiveImage={this.props.setActiveImage}/>
       </div>
     )
 

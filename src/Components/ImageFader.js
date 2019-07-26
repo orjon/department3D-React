@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Fade } from 'react-slideshow-image';
 import '../scss/ImageFader.scss'
 
@@ -72,25 +72,50 @@ const fadeProperties = {
   arrows: false,
   onChange: (oldIndex, newIndex) => {
     console.log(`fade transition from ${oldIndex} to ${newIndex}`);
+    console.log(designLabels[newIndex])
   }
 }
 
-const ImageFader = () => {
-  return (
-    <Fade {...fadeProperties}>
-      {fadeImages.map(image => (
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={image} alt=''/>
-          </div>
-        </div>
-      ))}
 
-    </Fade>
-  )
+class ImageFader extends Component {
+  render() {
+    return (
+      <Fade {...fadeProperties}
+      setActiveImage={this.props.setActiveImage}>
+        {fadeImages.map(image => (
+          <div className='each-fade'>
+            <div className='image-container'>
+              <img src={image} alt=''/>
+              <div className='imageLabel'>temp</div>
+            </div>
+          </div>
+        ))}
+
+      </Fade>
+    )
+  }
 }
 
+// const ImageFader = () => {
+//   return (
+//     <Fade {...fadeProperties}
+//     setActiveImage={this.props.setActiveImage}>
+//       {fadeImages.map(image => (
+//         <div className='each-fade'>
+//           <div className='image-container'>
+//             <img src={image} alt=''/>
+//             <div className='imageLabel'>temp</div>
+//           </div>
+//         </div>
+//       ))}
+//
+//     </Fade>
+//   )
+// }
+
 export default ImageFader;
+
+
 //
 // const fadeImages = [
 //   'http://www.orjon.com/images/design/cisco2015.jpg',

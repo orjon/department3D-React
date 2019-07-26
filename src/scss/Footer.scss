@@ -9,7 +9,8 @@ footer {
   border: $devBorder solid red;
   width: 100%;
   height: $footerHeight;
+  padding-left: $navPadding;
   padding-right: $navPadding;
-  @include flexRowEnd();
+  @include flexRowSpaceBetween();
 	background-color: $backgroundColor;
 }

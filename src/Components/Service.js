@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 import '../scss/Service.scss'
 
 class Service extends Component {
+
+
   render() {
     return(
+
       <div
         id={this.props.id}
         className={this.props.layout}>
@@ -14,6 +17,7 @@ class Service extends Component {
         </div>
         <div className='serviceImage'> </div>
       </div>
+
     )
 
   }
