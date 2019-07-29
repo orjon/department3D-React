@@ -7,7 +7,7 @@ class Footer extends Component {
       <footer>
 
       <div id='imageCredit'></div>
-      <div id='copyright'>&copy; department3D 2019</div>
+      <div id='copyright'>&copy;department3D 2019</div>
       </footer>
     )
   }

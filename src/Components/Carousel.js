@@ -15,11 +15,4 @@ class Carousel extends Component {
 
 export default Carousel;
 
-
-// <div className='links'>
-//   <br/>
-//   <h1><a href='#Architectural'>Architectural</a></h1>
-//   <h1><a href='#Models'>3D Models</a></h1>
-//   <h1><a href='#Product'>Product</a></h1>
-//   <h1><a href='#Technical'>Technical</a></h1>
-// </div>
+        // <div className='imageLabel'>{this.props.activeImageLabel}</div>

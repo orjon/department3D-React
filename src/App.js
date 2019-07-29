@@ -38,6 +38,7 @@ class App extends Component {
         <div id='main'>
 
           <Carousel
+            activeImageLabel={designLabels[this.state.activeImage]}
             setActiveImage={this.setActiveImage}/>
           <Service
             id='Visualisation'
@@ -83,15 +84,12 @@ const designLabels = [
   'Copper & Cement : Task Light',
   'Infiniti : London, UK',
   'Opera House : Manama, Bahrain',
-  'Knife: Cape Town, South Africa',
-  'Knife: Cape Town, South Africa',
   'Lapstånd: A4 flatpack laptop stand',
   'Office.01 : Reticulated Office Furniture',
   'Al Madina A Zarqa : Oman',
   'O.R.Tambo Airport Pedestrian Bridge : Johannesburg, South Africa',
   'Red Bull : Cape Town, South Africa',
   'Samsung Galaxy Launch : Berlin, Germany',
-  'Power Buoy : Floating power generator',
   'Sony Building Signage : Cape Town, South Africa',
   'Winxo HQ Signage : Casablanca, Morocco',
   'Swissport Snooze Lounge : Heathrow Terminal 2',
@@ -101,21 +99,3 @@ const designLabels = [
 ]
 
 export default App;
-
-///scroll things.
-
-// class MyComponent extends React.Component {
-//   handleScroll = e => {
-//     let element = e.target
-//     if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-//       // do something at end of scroll
-//     }
-//   }
-//   render() {
-//     return (
-//       <div className="content-container" onScroll={this.handleScroll}>
-//         // Your content
-//       </div>
-//     )
-//   }
-// }

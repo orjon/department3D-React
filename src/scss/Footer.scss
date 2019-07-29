@@ -5,7 +5,7 @@
 footer {
   position: fixed;
   bottom: 0px;
-  // z-index: 10;
+  z-index: 1;
   border: $devBorder solid red;
   width: 100%;
   height: $footerHeight;

@@ -1,34 +1,18 @@
 @import 'common';
+@import "flexLayouts";
 
 #Carousel {
-  // height: 100%;
   height: calc(100vh - #{$navHeight});
   width: 100%;
   scroll-snap-align: center;
   border: $devBorder solid orange;
+
+  .imageLabel {
+    z-index: 2;
+    border: $devBorder solid red;
+    position: relative;
+    bottom: $footerHeight;
+    @include flexRowStart();
+    padding-left: $navPadding;
+    }
 }
-
-
-
-
-// #Carousel {
-//   height: 100%;
-//   scroll-snap-align: center;
-//   background-color: lightgrey;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: row;
-//   justify-content: center;
-//   .links {
-//     border: $devBorder solid yellow;
-//     display: flex;
-//     align-content: center;
-//     flex-direction: row;
-//     justify-content: center;
-//
-//     a {
-//       border: $devBorder solid green;
-//     }
-//
-//   }
-// }
